@@ -8,6 +8,7 @@ import {
   psyArtists,
   psySets,
 } from "@/lib/presskit-data";
+import { DownloadButton } from "./DownloadButton";
 import { SetCard } from "./SetCard";
 
 export function PressKit() {
@@ -64,18 +65,40 @@ export function PressKit() {
           </div>
           </div>
 
-          <div className="relative mx-auto flex w-full max-w-xs justify-center lg:max-w-sm">
-            <div className="absolute inset-0 rounded-full bg-violet-600/20 blur-3xl" aria-hidden />
+          <div className="mx-auto flex w-full max-w-xs flex-col items-center gap-5 lg:max-w-sm">
+            <div className="relative flex w-full justify-center">
+              <div className="absolute inset-0 rounded-full bg-violet-600/20 blur-3xl" aria-hidden />
+              <Image
+                src={links.photo}
+                alt="Tiramisu — DJ"
+                width={420}
+                height={560}
+                priority
+                unoptimized
+                className="relative h-auto w-full max-h-[min(55vh,480px)] object-contain drop-shadow-[0_20px_50px_rgba(139,92,246,0.35)]"
+              />
+            </div>
             <Image
-              src={links.photo}
-              alt="Tiramisu — DJ"
-              width={420}
-              height={560}
-              priority
+              src={links.wordmark}
+              alt="Tiramisu — logotipo"
+              width={320}
+              height={80}
               unoptimized
-              key={links.photoVersion}
-              className="relative h-auto w-full max-h-[min(70vh,520px)] object-contain drop-shadow-[0_20px_50px_rgba(139,92,246,0.35)]"
+              className="h-auto w-full max-w-[280px] object-contain"
             />
+            <div className="flex w-full flex-col gap-2">
+              <DownloadButton
+                href={links.downloads.photo.href}
+                filename={links.downloads.photo.filename}
+                label="Baixar foto (PNG)"
+              />
+              <DownloadButton
+                href={links.downloads.wordmark.href}
+                filename={links.downloads.wordmark.filename}
+                label="Baixar logotipo (PNG)"
+                variant="zinc"
+              />
+            </div>
           </div>
         </div>
       </header>

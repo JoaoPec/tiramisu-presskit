@@ -7,9 +7,18 @@ export const links = {
   whatsapp: "71984313715",
   whatsappHref: "https://wa.me/5571984313715",
   emailHref: "mailto:joaopecurcino@hotmail.com",
-  /** Bump `photoVersion` ao trocar o ficheiro em public/tiramisu-photo.png */
-  photoVersion: "2",
-  photo: "/tiramisu-photo.png",
+  photo: "/tiramisu-dj-foto.png",
+  wordmark: "/tiramisu-wordmark.png",
+  downloads: {
+    photo: {
+      href: "/tiramisu-dj-foto.png",
+      filename: "tiramisu-dj-foto.png",
+    },
+    wordmark: {
+      href: "/tiramisu-wordmark.png",
+      filename: "tiramisu-logotipo.png",
+    },
+  },
 } as const;
 
 export const bio = {
