@@ -3,6 +3,10 @@ export const links = {
   instagram: "https://www.instagram.com/tiramisu.fm/",
   instagramHandle: "@tiramisu.fm",
   location: "Bahia",
+  email: "joaopecurcino@hotmail.com",
+  whatsapp: "71984313715",
+  whatsappHref: "https://wa.me/5571984313715",
+  emailHref: "mailto:joaopecurcino@hotmail.com",
 } as const;
 
 export const bio = {
@@ -38,19 +42,8 @@ export const houseSets: SetItem[] = [
   },
 ];
 
-/** Prog dark · fullon · psy — secção principal */
+/** Prog dark · fullon · psy — secção principal (Fractal Descent por último) */
 export const psySets: SetItem[] = [
-  {
-    id: "fractal-descent",
-    title: "Fractal Descent",
-    subtitle: "Prog dark",
-    description:
-      "Prog dark em progressão contínua — 128→144 BPM. Camadas que se comprimem até o transe.",
-    href: "https://soundcloud.com/tiramisuwuuu/fractal-descent-128144-bpm",
-    cover: "/covers/fractal-descent.jpeg",
-    bpm: "128 → 144 BPM",
-    embed: "soundcloud",
-  },
   {
     id: "amargura",
     title: "Amargura",
@@ -69,6 +62,17 @@ export const psySets: SetItem[] = [
       "Fullon noturno em alta tensão: kicks secos, leads psicodélicos e psicofunk na linha de Aardvarkk, Psymmetrix e Psychobass — feito para o horário em que a pista já não perdoa.",
     href: "https://soundcloud.com/tiramisuwuuu/fullon-night-teste",
     bpm: "Fullon / night",
+    embed: "soundcloud",
+  },
+  {
+    id: "fractal-descent",
+    title: "Fractal Descent",
+    subtitle: "Prog dark",
+    description:
+      "Prog dark em progressão contínua — 128→144 BPM. Camadas que se comprimem até o transe.",
+    href: "https://soundcloud.com/tiramisuwuuu/fractal-descent-128144-bpm",
+    cover: "/covers/fractal-descent.jpeg",
+    bpm: "128 → 144 BPM",
     embed: "soundcloud",
   },
 ];

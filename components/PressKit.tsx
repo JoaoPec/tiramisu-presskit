@@ -53,6 +53,12 @@ export function PressKit() {
             >
               {links.instagramHandle}
             </a>
+            <a
+              href="#contato"
+              className="rounded-full border border-violet-500/40 px-5 py-2.5 text-sm font-medium text-violet-200 transition hover:border-violet-400"
+            >
+              Contato
+            </a>
           </div>
         </div>
       </header>
@@ -131,6 +137,37 @@ export function PressKit() {
             ))}
           </div>
         </section>
+
+        <section
+          id="contato"
+          className="mt-24 scroll-mt-8 border-t border-zinc-800/80 pt-16"
+        >
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-violet-400">
+            Booking
+          </p>
+          <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
+            Contato
+          </h2>
+          <p className="mt-2 max-w-lg text-sm text-zinc-500">
+            Sets, festas e parcerias — fala comigo.
+          </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a
+              href={links.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-6 py-3 text-sm font-medium text-white transition hover:bg-emerald-500"
+            >
+              WhatsApp · {links.whatsapp}
+            </a>
+            <a
+              href={links.emailHref}
+              className="inline-flex items-center justify-center rounded-full border border-zinc-600 px-6 py-3 text-sm font-medium text-zinc-200 transition hover:border-zinc-400"
+            >
+              {links.email}
+            </a>
+          </div>
+        </section>
       </main>
 
       <footer className="border-t border-zinc-800/80 py-10">
@@ -155,6 +192,17 @@ export function PressKit() {
               rel="noopener noreferrer"
             >
               Instagram
+            </a>
+            <a
+              href={links.whatsappHref}
+              className="text-emerald-400 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+            <a href={links.emailHref} className="text-zinc-400 hover:underline">
+              E-mail
             </a>
           </div>
         </div>
