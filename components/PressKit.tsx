@@ -72,6 +72,8 @@ export function PressKit() {
               width={420}
               height={560}
               priority
+              unoptimized
+              key={links.photoVersion}
               className="relative h-auto w-full max-h-[min(70vh,520px)] object-contain drop-shadow-[0_20px_50px_rgba(139,92,246,0.35)]"
             />
           </div>

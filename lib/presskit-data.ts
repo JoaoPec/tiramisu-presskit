@@ -7,6 +7,8 @@ export const links = {
   whatsapp: "71984313715",
   whatsappHref: "https://wa.me/5571984313715",
   emailHref: "mailto:joaopecurcino@hotmail.com",
+  /** Bump `photoVersion` ao trocar o ficheiro em public/tiramisu-photo.png */
+  photoVersion: "2",
   photo: "/tiramisu-photo.png",
 } as const;
 
