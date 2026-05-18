@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     title: "Tiramisu — Press Kit",
     description: "Groove, progressão e transe. House · Prog Dark · Psytrance.",
     type: "website",
+    images: ["/tiramisu-photo.png"],
   },
 };
 

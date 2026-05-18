@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   bio,
@@ -19,7 +20,8 @@ export function PressKit() {
       </div>
 
       <header className="border-b border-zinc-800/80">
-        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-14 sm:px-6 sm:py-20">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-12">
+          <div className="flex flex-col gap-8">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-violet-400">
             Press kit · DJ
           </p>
@@ -59,6 +61,19 @@ export function PressKit() {
             >
               Contato
             </a>
+          </div>
+          </div>
+
+          <div className="relative mx-auto flex w-full max-w-xs justify-center lg:max-w-sm">
+            <div className="absolute inset-0 rounded-full bg-violet-600/20 blur-3xl" aria-hidden />
+            <Image
+              src={links.photo}
+              alt="Tiramisu — DJ"
+              width={420}
+              height={560}
+              priority
+              className="relative h-auto w-full max-h-[min(70vh,520px)] object-contain drop-shadow-[0_20px_50px_rgba(139,92,246,0.35)]"
+            />
           </div>
         </div>
       </header>

@@ -7,6 +7,7 @@ export const links = {
   whatsapp: "71984313715",
   whatsappHref: "https://wa.me/5571984313715",
   emailHref: "mailto:joaopecurcino@hotmail.com",
+  photo: "/tiramisu-photo.png",
 } as const;
 
 export const bio = {
