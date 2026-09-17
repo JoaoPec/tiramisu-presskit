@@ -71,8 +71,8 @@ export function PressKit() {
               <Image
                 src={links.photo}
                 alt="Tiramisu — DJ"
-                width={992}
-                height={1085}
+                width={1199}
+                height={1312}
                 priority
                 unoptimized
                 className="relative h-auto w-full max-h-[min(55vh,480px)] object-contain drop-shadow-[0_20px_50px_rgba(139,92,246,0.35)]"
